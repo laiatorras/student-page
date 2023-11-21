@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing app</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="page">
+        <h1>Canvas</h1>
+        <canvas id="canvas"></canvas>
+        <div id="tool-bar">
+            <span>
+                <lable for="color-button">Color</lable>
+                <input type="color" class="filter-button" id="color-button" />
+            </span>
+
+            <span>
+                <label for="width-button">Line Width</label>
+                <input
+                type="range"
+                class="filter-button"
+                id="width-button"
+                min="1"
+                max="30"
+                />
+            </span>
+
+            <span>
+                <label>Reset</label>
+                <button class="filter-button" id="reset-button">@</button>
+            </span>
+
+            <span>
+              <label for="size-slider">Shape Size</label>
+              <input type="range" class="filter-button" id="size-slider" min="10" max="100" value="50" />
+          </span>
+
+            <span>
+              <label>Circle</label>
+              <button class="filter-button" id="circle-button">◯</button>
+          </span>
+
+          <span>
+            <label>Triangle</label>
+            <button class="filter-button" id="triangle-button">△</button>
+        </span>
+
+        <span>
+            <label>Square</label>
+            <button class="filter-button" id="square-button">◻</button>
+        </span>
+
+
+        <span>
+          <label>Pencil</label>
+          <button class="filter-button" id="pencil-button">✎</button>
+      </span>
+
+        </div>
+    </div>
+    <script src="./app.js" type="module"></script>
+  </body>
+  </html>
